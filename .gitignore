@@ -1,0 +1,6 @@
+*.in
+*.out
+**/build
+**/nbproject
+*.mf
+*xml
