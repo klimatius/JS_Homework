@@ -205,13 +205,11 @@ div img{
 
 .left_menu{
 	width:170px;
-	display: flex;
+	display: block;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-items: flex-start;
 	list-style-type: none;
-	margin-top: -300px;
-
 }
 
 .left_menu a {
@@ -240,7 +238,7 @@ div img{
 .all_content{
 	display: flex;
     flex-direction: row;  
-    align-items: center;
+    align-items: flex-start;
     background-color: white;
 	
 }
