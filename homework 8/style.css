@@ -153,6 +153,7 @@ div img{
   background: #aaa;
   height: 1px;
 }
+
 .menu_list a:hover:after {
   width: 100%;
 }
@@ -163,8 +164,8 @@ div img{
 	align-items: flex-start;
 	justify-content: flex-start;
 	list-style-type: none;
-	margin-left: -40px;
 }
+
 .menu_list a {
 	display: block;
 	text-decoration: none;
@@ -174,20 +175,25 @@ div img{
 
 .left_menu li {
 	margin-bottom: 10px;
+	font-size: 17px;
 }
+
 .left_menu li a,
 .left_menu a:after,
 .left_menu a:before {
   transition: all .5s;
   text-decoration: none;
 }
+
 .left_menu a:hover {
   color: #4B0082;
 }
+
 .left_menu a{
   position: relative;
 }
- .left_menu a:after {
+
+.left_menu a:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -199,13 +205,14 @@ div img{
   background: #4B0082;
   height: 1px;
 }
+
 .left_menu a:hover:after {
   width: 100%;
 }
 
 .left_menu{
 	width:170px;
-	display: block;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
@@ -262,7 +269,8 @@ div img{
 .submenu{
 	font-weight: bold;
 	font-size: 20px;
-	margin-top: 25px;
+	margin-top: 45px;
+	color: black;
 }
 
 .search {
