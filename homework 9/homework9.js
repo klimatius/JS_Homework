@@ -17,11 +17,14 @@ function Animal(name){
         foodAmount = amount;
     };
     
-    self._name = name;
+    self.name = name;
+    var feed = self.feed;
+    self.feed = function(){
 
-    var animalFeed = self.animalFeed;
-    self.animalFeed = function() {
-        console.log('Насыпаем в миску ' + self.dailyNorm() + ' корма.' + '\nКот доволен ^_^');
+    }
+   var feed = self.feed;
+    self.feed = function() {
+        console.log('Насыпаем в миску ' + self.dailyNorm() + ' корма.' );
         return self;
     };
 }
@@ -30,6 +33,13 @@ function Cat(name) {
     var self = this;
     
     Animal.call(self, name);
+
+    var animalFeed = self.feed;
+    self.catFeed = function() { 
+        animalFeed.call(this);
+        console.log('Кот доволен ^_^');
+        return self;
+    }
 
     self.stroke = function(){
         console.log('Гладим Его Величество Кота');
@@ -40,6 +50,5 @@ function Cat(name) {
 var barsik = new Cat('Барсик');
 
 barsik.dailyNorm(300);
-barsik.animalFeed().stroke();
-barsik.stroke().animalFeed();
-
+barsik.catFeed().stroke();
+barsik.stroke().catFeed();
