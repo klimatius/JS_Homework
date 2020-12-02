@@ -1,20 +1,22 @@
 //Задание 1
-function filterArray(number){
+function filterArray(arr){
+	return(arr.filter(function(number){
     return number > 0;
+}));
 }
 
-var arr = [-1, 0, 2, 34, -2];
-arr.filter(filterArray);
-
+var array = [-1, 0, 2, 34, -2];
+console.log(filterArray(array1));
 
 //Задание 2
-function firstPositive(number){
+function firstPositive(arr){
+	return(arr.find(function(number){
     return number > 0;
+}));
 }
 
-var arr = [-1, 0, 2, 34, -2];
-var firstPositive = arr.find(firstPositive); 
-firstPositive;
+var array = [-1, 0, 2, 34, -2];
+console.log(firstPositive(array));
 
 
 //Задание 3
