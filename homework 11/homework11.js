@@ -1,15 +1,19 @@
 //Задание 1
-var arr = [-1, 0, 2, 34, -2];
-arr.filter(function(number){
+function filterArray(number){
     return number > 0;
-});
+}
+
+var arr = [-1, 0, 2, 34, -2];
+arr.filter(filterArray);
 
 
 //Задание 2
-var arr = [-1, 0, 2, 34, -2];
-var firstPositive = arr.find(function(number) {
+function firstPositive(number){
     return number > 0;
-});
+}
+
+var arr = [-1, 0, 2, 34, -2];
+var firstPositive = arr.find(firstPositive); 
 firstPositive;
 
 
