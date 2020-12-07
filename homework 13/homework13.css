@@ -1,0 +1,21 @@
+table {
+  width: 600px; 
+  border: 1px solid black;
+   border-collapse: collapse;
+}
+
+td{
+  height: 40px;
+  border: 1px solid black;
+  align-content: center;
+  padding-left: 7px;   
+  width: 33% 
+}
+
+input{
+  width: 95%;
+  height: 25px;
+  border:none;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
