@@ -4,9 +4,8 @@ document.body.onload = function createButton()
     var button = document.createElement('input');
     button.type = 'button';
     addRow.appendChild(button);
-    button.setAttribute('style', 'width: 100%; height: 100%; background: white;  border: 0; outline: none; font-weight:600');
-    addRow.setAttribute('style', 'padding: 0');
     button.value = 'ADD ROW';
+    button.id = 'button';
 }
 
 addRow.onclick = function(){
