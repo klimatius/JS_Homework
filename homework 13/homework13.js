@@ -1,11 +1,11 @@
-var addRow = document.getElementsByClassName("addRow")[0];
+var addRow = document.getElementsByClassName('addRow')[0];
 document.body.onload = function createButton()
 {
-    var button = document.createElement("input");
-    button.type = "button";
+    var button = document.createElement('input');
+    button.type = 'button';
     addRow.appendChild(button);
-    button.style.cssText = 'width: 100%; height: 100%; background: white;  border: 0; outline: none; font-weight:600';
-    addRow.style.padding = "0";
+    button.setAttribute('style', 'width: 100%; height: 100%; background: white;  border: 0; outline: none; font-weight:600');
+    addRow.setAttribute('style', 'padding: 0');
     button.value = 'ADD ROW';
 }
 
@@ -21,7 +21,7 @@ table.onclick = function(event) {
 };
 
 function checkKey(event) {
-        if(event.keyCode == "13") {
+        if(event.keyCode == '13') {
                 event.target.blur();
 
         }
