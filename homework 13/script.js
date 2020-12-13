@@ -22,7 +22,7 @@ function change(){
 }
 
 secondPar.onclick = function (event){
-	if(event.target.href != undefined){
+	if(event.target.tagName == "A"){
 		event.preventDefault();
 		alert(event.target.href);
 	}
