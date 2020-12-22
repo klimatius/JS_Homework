@@ -1,0 +1,68 @@
+button{
+	background-color: lime;
+}
+
+.getUsers{
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	right: 200px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #4CAF50;
+    background-color: #C8E6C9;
+}
+
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    padding: 14px 16px;
+}
+
+
+.tab button:hover {
+    background-color: #FFEB3B;
+}
+
+
+.tab button.active {
+    background-color: #4CAF50;
+  	color: #fff;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tablinks{
+	margin: 10px;
+    outline: none;
+}
+
+.main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 20vw;
+}
+
+.image{
+    float: left; 
+    margin-bottom: 10px;
+}
+.name{
+    float: left; 
+     height: 120px; 
+     margin-left: 10px;
+}
+
+h2{
+    margin-top: 100px;
+}
