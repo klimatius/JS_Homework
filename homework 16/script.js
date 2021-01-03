@@ -48,8 +48,7 @@ function tabsPaint(users){
     var tabs = document.createElement('div');
     tabs.innerHTML = usersTabs;
     document.getElementsByTagName('button')[0].before(tabs);
-
-    document.getElementById(users[0].id).style.display = 'block';
+    document.getElementById(users[0].id).classList.add('visible');
     document.getElementsByClassName('tablinks')[0].className += ' active';
 }
 
@@ -59,15 +58,16 @@ function openUser(evt, id) {
 
     tabcontent = document.getElementsByClassName('tabcontent');
     for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = 'none';
+        tabcontent[i].classList.remove('visible');
+        tabcontent[i].classList.add('nonvisible');
     }
 
     tablinks = document.getElementsByClassName('tablinks');
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(' active', '');
     }
-
-    document.getElementById(id).style.display = 'block';
+    document.getElementById(id).classList.remove('nonvisible');
+    document.getElementById(id).classList.add('visible');
     evt.currentTarget.className += ' active';
 }
 
