@@ -1,0 +1,67 @@
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+	width: 700px;
+	margin: 40px auto;
+}
+button {
+	background-color: #F5F5F5;
+
+	text-align: center;
+	font-size: 28px;
+	text-transform: capitalize;
+
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+
+}
+
+button:focus,
+button:hover {
+	outline: none;
+	background-color: #F0FFF0;
+}
+
+.command {
+	width: 300px;
+	height: 50px;
+
+	margin-bottom: 30px;
+}
+
+.save,
+.reset {
+	width: 280px;
+	height: 50px;
+
+	margin-bottom: 10px;
+}
+
+.timer {
+	font-size: 42px;
+
+	margin-bottom: 30px;
+
+}
+.timer td {
+	border: 3px solid black;
+	border-radius: 10px;
+
+	padding: 15px 50px;
+}
+
+.timeList {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 150px;
+	margin: 40px auto;
+
+	font-size: 30px;
+}
