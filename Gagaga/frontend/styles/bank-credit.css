@@ -1,0 +1,206 @@
+body {
+	font-family: 'Oswald', sans-serif;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.main-text {
+	text-align: center;
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.credits__title {
+	display: block;
+
+	text-align: center;
+	font-size: 28px;
+	color: #144E51;
+
+	padding-top: 50px;
+}
+
+.credit__wrapper p {
+	color: #144E51;
+}
+.type-of-currency__button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 300px;
+
+
+}
+.type-of-currency {
+	width: 90px;
+	height: 80px;
+
+	padding-right: 10px;
+
+	background-color: #fff;
+	border: 1px solid #00b3fa;
+}
+
+.type-of-currency:hover,
+.type-of-currency:focus {
+	background-color: #00b3fa;
+}
+
+
+.type-of-credit__container {
+	border: 1px solid #00b3fa;
+	border-left: 10px solid #00b3fa;
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 20px;
+}
+
+.credit__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: row;
+	align-items: center;
+
+	border-top: 2px solid rgba(112, 128, 144, 0.5)
+}
+
+.name-of-credit {
+	padding-bottom: 20px;
+}
+
+
+.currency__image {
+	display: block;
+
+	width: 80px;
+	height: 56px;
+
+	border-radius: 10px;
+
+	margin-bottom: 20px;
+}
+
+.credit__image {
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+
+	margin-right: 50px;
+	margin-top: 20px;
+}
+
+.credit__description {
+	display: block;
+
+	width: 800px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.button__arrange {
+	padding: 10px 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	background-color: #00b3fa;
+	border: 1px solid #00b3fa;
+	border-radius: 10px;
+}
+
+.button__arrange:hover,
+.button__arrange:focus {
+	background-color: #0075fa;
+}
+
+
+.visible {
+	display: none;
+}
+
+
+.main-page__text {
+	text-align: center;
+	font-size: 26px;
+	line-height: 2;
+
+	margin-top: 100px;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	border: 2px solid #00f2fa;
+	border-left: 10px solid #00f2fa;
+	border-radius: 10px;
+
+}
+
+.main-page__image {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.bank-info__manual {
+	border: 2px solid #00f2fa;
+	border-left: 10px solid #00f2fa;
+	border-radius: 10px;
+
+	padding-left: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+.manual__title {
+	display: block;
+
+	font-size: 20px;
+	line-height: 2;
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.the-bank-manual {
+	font-weight: bold;
+}
+
+.common-site__item:hover,
+.common-site__item:focus {
+	border-bottom: 4px solid #faed00;
+}
+
+.user-list__login:hover,
+.user-list__login:focus {
+	background-color: #faed00;
+}
+
+.main-nav__item {
+	border-bottom: 4px solid transparent;
+}
+.main-nav__item:hover,
+.main-nav__item:focus {
+	border-bottom: 4px solid #144E51;
+}
